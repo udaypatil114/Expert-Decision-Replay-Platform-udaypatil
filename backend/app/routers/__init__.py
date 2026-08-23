@@ -1,0 +1,1 @@
+"""Router module — API endpoints."""
