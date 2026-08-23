@@ -5,11 +5,13 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
   },
+
   server: {
     host: '0.0.0.0',
     port: 5173,
@@ -19,5 +21,11 @@ export default defineConfig({
         changeOrigin: true,
       },
     },
+  },
+
+  preview: {
+    host: '0.0.0.0',
+    port: 10000,
+    allowedHosts: ['expert-decision-replay-frontend-4ykk.onrender.com'],
   },
 });
