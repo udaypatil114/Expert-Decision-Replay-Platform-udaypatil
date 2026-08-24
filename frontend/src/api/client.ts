@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const client = axios.create({
-  baseURL: "",
+  baseURL: "https://expert-decision-replay-backend.onrender.com",
   headers: {
     "Content-Type": "application/json",
   },
